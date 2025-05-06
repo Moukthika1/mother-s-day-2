@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science - Mother's Day Scrapbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scrapbook-background">
+        <h1 class="title">Science & Mother's Day Wonders</h1>
+        <p class="intro-text">Science explains the world we live in! Explore fun science facts and experiments.</p>
+
+        <!-- Interactive Science Fact Section -->
+        <div class="science-facts">
+            <h2>Did You Know?</h2>
+            <p>The heart is an amazing organ! It pumps blood through 60,000 miles of blood vessels every day.</p>
+            <div class="fact-toggle">
+                <button onclick="showFact('fact1')">Heart Fact</button>
+                <div id="fact1" class="hidden">The human heart beats about 100,000 times each day!</div>
+            </div>
+        </div>
+
+        <!-- Animated Flower and Insect -->
+        <div class="flower" onclick="location.href='python.html'">🌸</div>
+        <div class="insect" onclick="location.href='stats.html'">🐞</div>
+
+        <!-- Random Science Quiz Button -->
+        <button class="quiz-button" onclick="showScienceQuiz()">Take a Quick Quiz!</button>
+    </div>
+
+    <script>
+        // Show extra fact on click
+        function showFact(factId) {
+            document.getElementById(factId).classList.toggle('hidden');
+        }
+
+        // Display quiz prompt
+        function showScienceQuiz() {
+            alert("What is the chemical symbol for water? (H2O)");
+        }
+    </script>
+</body>
+</html>
