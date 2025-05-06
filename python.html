@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Mother's Day Scrapbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scrapbook-background">
+        <h1 class="title">Python Programming and Mother's Day</h1>
+        <p class="intro-text">Let’s write some code in Python! Learn by solving coding challenges.</p>
+
+        <!-- Interactive Code Snippet -->
+        <div class="code-challenge">
+            <h2>Write Code to Print 'Happy Mother's Day'</h2>
+            <textarea id="python-code" placeholder="Type your code here..."></textarea>
+            <button onclick="checkPythonCode()">Run Code</button>
+            <pre id="python-output"></pre>
+        </div>
+
+        <!-- Animated Book and Heart -->
+        <div class="book" onclick="location.href='stats.html'">📚</div>
+        <div class="heart" onclick="location.href='love.html'">❤️</div>
+    </div>
+
+    <script>
+        // Check Python code (simple simulation)
+        function checkPythonCode() {
+            const userCode = document.getElementById('python-code').value;
+            if (userCode.includes('print') && userCode.includes('Mother\'s Day')) {
+                document.getElementById('python-output').textContent = "Code is correct! Output: Happy Mother's Day!";
+            } else {
+                document.getElementById('python-output').textContent = "Oops, try again.";
+            }
+        }
+    </script>
+</body>
+</html>
