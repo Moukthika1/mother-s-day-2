@@ -1,33 +1,41 @@
-
+<!-- index.html - Main Page -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Mother's Day</title>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mother's Day Scrapbook</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="scrapbook-background">
-        <h1 class="title">Happy Mother's Day!</h1>
-        <p class="intro-text">Click on the flowers, butterflies, and secret letters to uncover surprises.</p>
+  <div class="page-wrapper">
+    <h1 class="title">To the Most Amazing Mom</h1>
+    <p class="intro">Explore our scrapbook of love, learning, and wonder. Some surprises are hidden. Click wisely.</p>
 
-        <div class="interactive-text">
-            <span class="crooked-letter">L</span>
-            <span class="crooked-letter">O</span>
-            <span class="crooked-letter">V</span>
-            <span class="crooked-letter">E</span>
-        </div>
-
-        <div class="butterfly" onclick="moveButterfly(event)">🦋</div>
-        <div class="flower" onclick="bloomFlower(event)">🌸</div>
-
-        <div class="crawling-insects">
-            <div class="insect">🐞</div>
-            <div class="insect">🐜</div>
-        </div>
+    <!-- Interactive Letters for Cipher -->
+    <div class="cipher-code">
+      <span class="letter">1</span>
+      <span class="letter">2</span>
+      <span class="letter">3</span>
+      <span class="letter">4</span>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Animated Elements for Navigation -->
+    <div class="animated-items">
+      <div class="flower" onclick="location.href='math.html'"></div>
+      <div class="butterfly" onclick="location.href='science.html'"></div>
+      <div class="insect" onclick="location.href='python.html'"></div>
+      <div class="book" onclick="location.href='stats.html'"></div>
+      <div class="heart" onclick="location.href='love.html'"></div>
+    </div>
+  </div>
+
+  <script>
+    // Secret cipher redirect logic
+    const url = window.location.href;
+    if (url.endsWith("1234")) {
+      window.location.href = "secret.html";
+    }
+  </script>
 </body>
 </html>
