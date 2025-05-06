@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love - Mother's Day Scrapbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scrapbook-background">
+        <h1 class="title">A Message of Love for My Mom</h1>
+        <p class="intro-text">This is my way of saying thank you for everything, Mom. I love you!</p>
+
+        <!-- Heartfelt Message -->
+        <div class="message">
+            <p>Thank you for being the most wonderful mom. Your love and support have shaped me into who I am today. I love you forever!</p>
+        </div>
+
+        <!-- Interactive Secret Note -->
+        <div class="secret-note">
+            <button onclick="showSecretMessage()">Reveal Secret Message</button>
+            <div id="secret-message" class="hidden">You're the best mom in the world!</div>
+        </div>
+        
+        <!-- Interactive Butterfly -->
+        <div class="butterfly" onclick="location.href='index.html'">🦋</div>
+    </div>
+
+    <script>
+        function showSecretMessage() {
+            document.getElementById('secret-message').classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
