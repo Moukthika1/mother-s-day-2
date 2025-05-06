@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - Mother's Day Scrapbook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scrapbook-background">
+        <h1 class="title">Statistics & Mother’s Day Fun</h1>
+        <p class="intro-text">Let’s dive into statistics and explore some interesting data!</p>
+
+        <!-- Stats Question -->
+        <div class="stats-question">
+            <h2>What is the average number of flowers given on Mother’s Day?</h2>
+            <p>Type your answer:</p>
+            <input type="text" id="stats-answer">
+            <button onclick="checkStatsAnswer()">Submit</button>
+            <p id="stats-feedback"></p>
+        </div>
+
+        <!-- Interactive Graph (example only) -->
+        <div class="stats-graph">
+            <div class="bar" style="height: 70%;">Flowers</div>
+            <div class="bar" style="height: 30%;">Cards</div>
+            <div class="bar" style="height: 50%;">Chocolates</div>
+        </div>
+
+        <!-- Animated Butterfly -->
+        <div class="butterfly" onclick="location.href='python.html'">🦋</div>
+    </div>
+
+    <script>
+        function checkStatsAnswer() {
+            const answer = document.getElementById('stats-answer').value;
+            if (answer == "72") {
+                document.getElementById('stats-feedback').innerText = "Correct! 72 is the average number.";
+            } else {
+                document.getElementById('stats-feedback').innerText = "Oops! Try again.";
+            }
+        }
+    </script>
+</body>
+</html>
